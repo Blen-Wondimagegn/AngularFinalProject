@@ -1,0 +1,7 @@
+<h1>Task Lists</h1>
+<ul>
+  <li *ngFor ="let t of task">
+    <button><a [routerLink]= "['/task', t.id]">{{t.title}} </a></button>
+    </li>
+</ul>
+<app-task-form></app-task-form>
